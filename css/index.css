@@ -1,3 +1,304 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
 
 
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! *******************************************************************/
+
+/* Responsive Web Design ****************/
+.container {
+    max-width: 878px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+/* Tablet *******************************/
+@media(max-width: 800px) {
+    .container {
+        background: green;
+    }
+
+    .middle-img {
+        width: 764px;
+    }
+
+    .cta .circle {
+        display: none;
+    }
+}
+/* Mobile ******************************/
+@media(max-width: 500px) {
+    .container {
+    background: red;
+    }
+
+    .navigation nav{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .nav a {
+    margin-bottom: 20px;
+    }
+
+    .cta .circle {
+    display: none;
+    }
+}
+
+/* Old 
+
+.container {
+	width: 878px;
+	margin: auto;
+}
+*/
+
+
+.navigation {
+	display: flex;
+}
+
+.navigation nav {
+	margin-top: 40px;
+	width: 610px;
+	justify-content: space-between;
+	display: flex;
+	/* Top Right Bottom Left */
+}
+
+nav a{
+	text-decoration: none;
+	margin: 0 20px;
+	color: gray;
+}
+
+/* Image */
+
+.great-logo{
+	margin: 28px 0 0 91px;
+}
+
+.cta{
+	display: flex;
+	align-items: flex-start;
+}
+
+.cta .cta-text {
+	width: 50%;
+	font-size: 80px;
+	vertical-align: top;
+	text-align: center;
+	margin: 130px 0px;
+	padding: 0px 60px;
+}
+
+/* Button */
+
+.cta .cta-text button{
+
+	background: white;
+	vertical-align: top;
+	margin-top: 5px;
+	padding: 10px 50px;
+	font-size: 18px;
+	border: 1px solid black;
+}
+
+.cta .cta-text button:hover {
+	background: black;
+	color: white;
+}
+
+/* Image */
+
+.cta .circle {
+	padding: 80px 0px 0px 41.3px;
+
+}
+
+/* Top Text */
+
+.top-content {
+	border-top: 1px solid black;
+	display: flex;
+	flex-direction: row;
+
+}
+
+.top-content .text-container{
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+/* Bottom Text */
+
+.bottom-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.bottom-content .text-container{
+
+	width: 33%;
+	padding-top: 20px;
+	line-height: 20px;
+	padding-bottom: 60px;
+}
+
+
+
+/* Contact and Footer */
+
+.contact {
+	padding: 25px 0px 0px 0px;
+	border-top: 1px solid black;
+}
+
+footer {
+	text-align: center;
+	padding: 35px 0px
+}
+
+/* Services Page **************************************************/
+.serv-img {
+	margin: 22px 0;
+}
+.serv-text {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	line-height: 1.3;
+}
+
+.serv-text h1{
+	font-size: 26px;
+	margin: 10px 0;
+}
+
+.serv-text .serv-bod {
+	border-bottom: 1px solid black;
+	padding-bottom: 40px;
+	margin-bottom: 20px;
+}
+
+/* Middle Boxes */
+
+.middle-boxes {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	border-bottom: 2px solid black;
+	padding-bottom: 15px;
+}
+
+.middle-boxes .text-box{
+	padding: 25px;
+	border: 1px solid black;
+	width: 420px;
+	height: 250px;
+	background: #F0F0F0;
+	margin: 20px 0px;
+}
+
+/* Button */
+
+.middle-boxes .text-box button{
+	padding: 10px 40px;
+	margin-top: 20px;
+	cursor: pointer;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid black;
+}
+
+.middle-boxes .text-box button:hover {
+	background: black;
+	color: white;
+}
+
+/* Services Footer */
+
+.facts {
+	display: flex;
+	justify-content: space-evenly;
+	padding-bottom: 25px;
+	padding-top: 40px;
+}
+
+.fact-serv{
+	width: 420px;
+}
+
+.fact-serv ul {
+	padding: 25px;
+	list-style-type: square;
+	line-height: 1.5;
+
+.bott-img {
+	padding: 10px;
+}
+
