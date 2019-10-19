@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5 {
 
 /* Your code starts here! *******************************************************************/
 
-/* Responsive Web Design ****************/
+
 .container {
     max-width: 878px;
     margin: 0 auto;
@@ -77,36 +77,115 @@ h1, h2, h3, h4, h5 {
 
 /* Tablet *******************************/
 @media(max-width: 800px) {
-    .container {
-        background: green;
-    }
 
-    .middle-img {
-        width: 764px;
-    }
+.container {
+	width: 800px;
+  /* background: green; */
+}
+.navigation {
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: center;
+	font-size: 20px;
+}
 
-    .cta .circle {
-        display: none;
-    }
+.great-logo {
+	width: 190px;
+}
+
+.cta {
+	margin: 0px;
+	margin-top: 0px;
+	justify-content: center;
+}
+
+.cta .cta-text {
+	margin:0px;
+	font-size: 60px;
+}
+
+body {
+	justify-content: center;
+	margin: 75px 10 35px 0;
+	padding: 15px;
+}
+
+.middle-img {
+	width: 95%;
+	margin: 0px;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+.cta .circle {
+	display: none;
+}
+
+.contact {
+	margin-left: 25px;
+}
 }
 /* Mobile ******************************/
 @media(max-width: 500px) {
     .container {
-    background: red;
-    }
+		width: 90%;
+	}
 
     .navigation nav{
-    display: flex;
-    flex-direction: column;
-    }
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		border-bottom: 1px solid black;
+		align-items: center;
+		text-align: center;
+	}
 
-    .nav a {
-    margin-bottom: 20px;
-    }
+    nav a {
+		width: 99%;
+		border-top: 1px solid black;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+		font-size: 22px;
+		margin: 0px;
+		padding-left: 40%;
+		padding-top: 5%;
+		padding-right: 60%;
 
-    .cta .circle {
-    display: none;
-    }
+
+	}
+
+	.cta .circle {
+		display: none;
+		}
+
+	body .top-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.top-content .text-container {
+		flex-direction: column;
+		margin-bottom: 35px;
+	}
+
+	body .bottom-content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.bottom-content .text-container {
+		width: 80%;
+		padding-top: 10px;
+		padding-bottom: 60px;
+
+	}
+
+	body .middle-img {
+		width: 95%
+	}
+
+    
 }
 
 /* Old 
